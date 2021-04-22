@@ -1,6 +1,7 @@
 /**
  * @param {number[]} nums
  */
+//  https://leetcode-cn.com/problems/shuffle-an-array/
  var Solution = function(nums) {
    this.nums = nums;
 
