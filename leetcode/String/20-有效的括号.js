@@ -11,6 +11,29 @@
  * @param {string} s
  * @return {boolean}
  */
- var isValid = function(s) {
+var isValid = function(s) {
+  let sArr = s.split('');
+  let len = sArr.length;
+  if (len % 2) return false;
 
+  const map = new Map([
+    [')', '('],
+    [']', '['],
+    ['}', '{'],
+  ]);
+  const stack = [];
+
+  for (let i = 0; i < len; i++) {
+    if (map.get(s[i])) {
+      if (stack[stack.length - 1] !== map.get(s[i])) return false;
+      stack.pop();
+    } else {
+      stack.push(s[i]);
+    }
+  }
+
+  return !stack.length
 };
+
+
+console.log(isValid('()'))

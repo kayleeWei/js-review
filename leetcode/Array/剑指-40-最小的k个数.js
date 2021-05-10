@@ -1,4 +1,4 @@
-// https://github.com/sisterAn/JavaScript-Algorithms/issues/59
+// https://github.com/sisterAn/JavaScript-Algorithms/issues/59     
 
 // function getLeastNumbers(arr, k) {
 //   arr.sort((a, b) => a - b);
