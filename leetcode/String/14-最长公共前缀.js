@@ -21,3 +21,6 @@ var longestCommonPrefix = function(strs) {
 
   return ans;
 };
+
+// 输入：strs = ["flower","flow","flight"]
+// 输出："fl"
