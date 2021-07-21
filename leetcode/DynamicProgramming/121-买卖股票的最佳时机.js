@@ -2,6 +2,7 @@
  * @param {number[]} prices
  * @return {number}
  */
+//  https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/
 var maxProfit = function(prices) {
   let minPrice = Number.MAX_SAFE_INTEGER;
   let maxProfit = 0;
