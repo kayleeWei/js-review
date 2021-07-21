@@ -15,9 +15,6 @@ var countSubstrings = function(s) {
    // 从下往上，从左往右遍历上三角矩阵
    for(let i = size - 1; i >= 0; i--) {
       for(let j = i; j < size; j++) {
-         if (i === 4 && j === 5) {
-            console.log(dp[i][j])
-         }
          if (s[i] === s[j]) {
             if (j - i <= 1) {
                result++;
