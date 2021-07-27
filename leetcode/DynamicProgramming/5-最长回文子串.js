@@ -34,6 +34,7 @@ var longestPalindrome = function(s) {
 };
 
 // 中心扩展法
+// https://leetcode-cn.com/problems/longest-palindromic-substring/solution/chao-jian-dan-de-zhong-xin-kuo-san-fa-yi-qini/
 var longestPalindrome2 = function(s) {
   const size = s.length;
   if (size < 2) return s;
